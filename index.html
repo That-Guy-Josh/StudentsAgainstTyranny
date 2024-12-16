@@ -11,21 +11,33 @@
     <header>
         <nav>
             <ul>
-                <li><a href="#" class="active">Home</a></li>
-                <li><a href="#schools">Schools</a></li>
-                <li><a href="#petitions">Petitions</a></li>
-                <li><a href="#updates">Updates</a></li>
+                <li><a href="#" class="active" data-tab="home">Home</a></li>
+                <li><a href="#" data-tab="schools">Schools</a></li>
+                <li><a href="#" data-tab="petitions">Petitions</a></li>
+                <li><a href="#" data-tab="updates">Updates</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section id="home">
+        <!-- Home Tab -->
+        <section id="home" class="tab-content active">
             <h1>Welcome to Students Against Tyranny - Madison</h1>
             <p>Here, we advocate for student rights within the Madison Local School District in Madison, Ohio. We aim to empower students to stand up for their rights, voice concerns, and promote fair treatment for all. Our mission is to resist any form of tyranny in schools, ensuring that students' voices are heard and respected.</p>
+            
+            <h2>Recent Updates</h2>
+            <div class="update">
+                <p><strong>December 2024</strong> - <em>Author: John Doe</em></p>
+                <p>New initiative to increase student involvement in decision-making at Madison Comprehensive High School.</p>
+            </div>
+            <div class="update">
+                <p><strong>November 2024</strong> - <em>Author: Jane Smith</em></p>
+                <p>Progress on petition to improve student lunch options in the district.</p>
+            </div>
         </section>
 
-        <section id="schools">
+        <!-- Schools Tab -->
+        <section id="schools" class="tab-content">
             <h2>Schools in the District</h2>
             <label for="schoolSelect">Choose a school:</label>
             <select id="schoolSelect">
@@ -35,7 +47,8 @@
             <div id="schoolInfo"></div>
         </section>
 
-        <section id="petitions">
+        <!-- Petitions Tab -->
+        <section id="petitions" class="tab-content">
             <h2>Petitions</h2>
             <p>Support ongoing petitions by clicking the links below:</p>
             <ul>
@@ -44,7 +57,8 @@
             </ul>
         </section>
 
-        <section id="updates">
+        <!-- Updates Tab -->
+        <section id="updates" class="tab-content">
             <h2>Updates</h2>
             <div class="update">
                 <p><strong>December 2024</strong> - <em>Author: John Doe</em></p>
